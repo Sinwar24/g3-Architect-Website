@@ -11,11 +11,21 @@
 .display-flex{
                display: flex;
 }
-.navbar{justify-content: space-between;}
+.navbar{justify-content: space-between;
+align-items: center;}
+.brand {font-weight: 700;
+font-size: 3rem;}
 .nav-item{
                list-style: none;
                margin-right: 30px;
 }
+.btn-primary{background-color: #FF900E;
+color: white;
+font-size: 1.25rem;
+padding: 20px 25px;
+border-radius: 8px;
+border: none;
+margin-bottom: 50px; }
 
 .nav-link {text-decoration: none;}
 
@@ -27,4 +37,23 @@
 .navbar, .banner {
                max-width: 1440px;
                margin: 0 auto;
+}
+
+/* Banner Related Styles */
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-title{font-weight: 700;
+font-size: 4rem;}
+.banner-photo {display: block;
+margin: 0 auto;}
+
+/* responsive meadia query */
+
+@media screen and (max-width: 576px) {
+  .navbar, .nav-item {
+ flex-direction: column; 
+}
 }
